@@ -171,3 +171,20 @@ nav a.active-link {
     background-color: #f8f9fa;
     border-left: 5px solid #08b4b4;
 }
+/* Защита для новых блоков, чтобы они не сжимались в колонку */
+.content-block {
+    width: 100%;
+    display: block; /* Отменяем flex из родителя */
+    margin-top: 20px;
+}
+
+.content-block h2 {
+    text-align: left; /* Выравниваем заголовки по левому краю */
+    margin-bottom: 15px;
+}
+
+/* Делаем текст приветствия чуть шире, чтобы он не сжимался */
+.intro-text {
+    flex: 1;
+    min-width: 50%; /* Даем тексту минимум половину ширины */
+}
